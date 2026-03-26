@@ -1,0 +1,3 @@
+name: careerprep-openenv
+description: A simple OpenEnv benchmark for career guidance tasks
+entry_point: env.py
