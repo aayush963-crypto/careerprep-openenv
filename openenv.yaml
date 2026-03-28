@@ -1,3 +1,9 @@
+
 name: careerprep-openenv
-description: A simple OpenEnv benchmark for career guidance tasks
-entry_point: env.py
+description: A domain-specific OpenEnv benchmark for student career guidance tasks
+entry_point: app.py
+framework: fastapi
+endpoints:
+  reset: /reset
+  step: /step
+  state: /state
