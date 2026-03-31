@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import uvicorn
 from env import CareerPrepEnv
 
 app = FastAPI()
@@ -27,3 +28,9 @@ def step(req: ResponseRequest):
 @app.get("/")
 def root():
     return {"status": "CareerPrep OpenEnv server is running"}
+
+def main():
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
+if __name__ == "__main__":
+    main()
