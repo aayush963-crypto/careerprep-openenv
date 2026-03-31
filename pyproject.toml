@@ -1,0 +1,11 @@
+[project]
+name = "careerprep-openenv"
+version = "0.1.0"
+description = "A simple OpenEnv benchmark for student career guidance tasks"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "pyyaml"
+]
